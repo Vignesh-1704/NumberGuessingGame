@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)),url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper{
+    border: white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(224, 224, 224, 0.6);
+    text-align: center;
+}
+
+.wrapper header{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.wrapper p{
+    color: #333;
+}
+
+.wrapper .input-class{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px;
+}
+
+.input-class input,
+.input-class button {
+    height: 50px;
+    width: calc(100% / 2);
+    outline: none;
+    border-radius: 8px;
+}
+
+.input-class input{
+    border: 1px solid #aaa;
+    text-align: center;
+    font-size: medium;
+    color: #707070;
+}
+
+
+.input-class input:disabled{
+    cursor: not-allowed;
+}
+
+.input-class button{
+    border: none;
+    background-color: #fe48b6;
+    color: #fff;
+    font-size: medium;
+    cursor: pointer;
+    transition: 0.3s;  /* clicking effect duration */
+}
+
+.input-class button:hover{
+    box-shadow: 0 0 5px 0 black inset, 0 0 20px 2px #333;
+    border: 3px solid #00d7c3;
+}
+
+
+.input-class button:active{   /*Clicking effect on the button*/
+    transform:scale(0.9);
+}
+
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
+
+
+.difficulty{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.difficulty button{
+    height: 50px;
+    width: 100px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+.difficulty button:active{
+    transform: scale(0.9);
+}
+
+.difficulty button:hover{
+    box-shadow: 0 0 5px 0 black inset, 0 0 20px 2px #333;
+    border: 3px solid #00d7c3;
+}

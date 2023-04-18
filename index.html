@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Game</title>
+</head>
+<body>
+    <div class="difficulty">
+        <button class="level" value="easy" onclick="getDifficulty(value)">Easy</button>
+        <button class="level" value="medium" onclick="getDifficulty(value)">Medium </button>
+        <button class="level" value="hard" onclick = "getDifficulty(value)"> Hard </button>
+    </div>
+
+    <div class="wrapper">
+        <header>Guess a Number between <span class="start">1</span> to <span class="stops">N</span></header>
+        <p class="guess"></p>
+        <div class="input-class">
+            <input type="number"/>
+            <button class="button">Check</button>
+        </div>
+        <p>You have <span class="chances">N</span> Chances</p>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
